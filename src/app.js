@@ -4,7 +4,7 @@ const hbs = require('hbs');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 require('dotenv').config();  //for deployment on heroku
-const port = process.env.PORT || 3000; 
+let port = process.env.PORT || 3000; 
 
 const publicDirectoryPath = path.join(__dirname, '../public');
 const viewPath = path.join(__dirname, '../templates/views');
@@ -102,6 +102,6 @@ app.get('*',(req,res)=>{
   })
 });
 
-app.listen(process.env.PORT || 3000, ()=>{
-  console.log("Server is up at port 3000 or at process.env.");
+app.listen(port, ()=>{
+  console.log("Server is up at port" + port);
 });
