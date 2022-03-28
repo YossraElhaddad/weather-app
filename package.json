@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-   "start": "node app.js"
-   "heroku-postbuild": "npm run build"
+   "dev": "react-scripts start",
+"start": "serve -s build",
+"heroku-postbuild": "npm run build"
   },
    "engines": {
     "node": "16.14.0",
