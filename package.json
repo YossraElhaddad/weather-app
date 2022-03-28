@@ -1,23 +1,23 @@
 {
-  name: "weather-app",
-  version: "1.0.0",
-  description: "",
-  main: "app.js",
-  scripts: {
-   start: "node app.js"
-   heroku-postbuild: "npm run build"
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+   "start": "node app.js"
+   "heroku-postbuild": "npm run build"
   },
-   engines: {
-    node: "16.14.0",
-    npm: "8.3.1"
+   "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.1"
   },
-  keywords: [],
-  author: "",
-  license: "ISC",
-  dependencies: {
-    dotenv: "^16.0.0",
-    express: "^4.17.3",
-    hbs: "^4.2.0",
-    request: "^2.88.2"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "hbs": "^4.2.0",
+    "request": "^2.88.2"
   }
 }
