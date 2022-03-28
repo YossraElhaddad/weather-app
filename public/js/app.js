@@ -14,7 +14,7 @@ const result = document.querySelector('.result');
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault();
   const location = search.value;
-  fetch('https://weather-app-0022.herokuapp.com/weather?address=' + location).then((response)=>{
+  fetch('/weather?address=' + location).then((response)=>{
     response.json().then((data)=>{
       if(data.error)
       result.textContent = data.error;
